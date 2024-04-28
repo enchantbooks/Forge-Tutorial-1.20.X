@@ -4,7 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.enchantbook.tutorialmod2.block.ModBlocks;
 import net.enchantbook.tutorialmod2.item.ModCreativeModTabs;
 import net.enchantbook.tutorialmod2.item.ModItems;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +37,7 @@ public class TutorialMod2
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

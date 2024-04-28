@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                                 output.accept(ModItems.RAW_SAPPHIRE.get());
                                 output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                                 output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                                output.accept(ModItems.TEST_ITEM.get());
                             })
                             .build());
     public static void register(IEventBus eventBus) {
